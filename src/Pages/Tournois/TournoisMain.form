@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Pages.Tournois.TournoisMain">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="15" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="2" bottom="2" right="2"/>
+    <constraints>
+      <xy x="20" y="20" width="1044" height="650"/>
+    </constraints>
+    <properties>
+      <background color="-11469008"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <vspacer id="ea088">
+        <constraints>
+          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="9fa94" class="javax.swing.JButton" binding="modifierLeTournoiButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="5" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Modifier le tournoi"/>
+        </properties>
+      </component>
+      <component id="fa75a" class="javax.swing.JButton" binding="ajouterUnTournoisButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="5" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Ajouter un tournois"/>
+        </properties>
+      </component>
+      <scrollpane id="b4537">
+        <constraints>
+          <grid row="1" column="1" row-span="5" col-span="4" vsize-policy="7" hsize-policy="7" anchor="1" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="128"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-11469008"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="6a1a9" class="javax.swing.JTable" binding="tableTournois">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="b43b8" class="javax.swing.JTextField" binding="tournoiTextResearch">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="be431" class="javax.swing.JButton" binding="rechercherButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Rechercher"/>
+        </properties>
+      </component>
+      <component id="c955d" class="javax.swing.JButton" binding="addEpreuve">
+        <constraints>
+          <grid row="3" column="5" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="ajouter une epreuve"/>
+        </properties>
+      </component>
+      <vspacer id="b2544">
+        <constraints>
+          <grid row="5" column="5" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="2f231" class="javax.swing.JButton" binding="supprimerLeTournoiButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="5" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-4247010"/>
+          <text value="Supprimer le tournoi"/>
+        </properties>
+      </component>
+      <scrollpane id="9d844">
+        <constraints>
+          <grid row="8" column="1" row-span="2" col-span="4" vsize-policy="7" hsize-policy="7" anchor="1" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="-1" height="55"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-11469008"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="540dc" class="javax.swing.JTable" binding="matchTable">
+            <constraints/>
+            <properties>
+              <autoCreateRowSorter value="false"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="d6dce" class="javax.swing.JComboBox" binding="choixAnnee">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="caf38" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Historique des vainqueurs :"/>
+        </properties>
+      </component>
+      <scrollpane id="a4d10">
+        <constraints>
+          <grid row="11" column="1" row-span="3" col-span="4" vsize-policy="7" hsize-policy="7" anchor="1" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="-1" height="55"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-11469008"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="37e09" class="javax.swing.JTable" binding="epreuveTable">
+            <constraints/>
+            <properties>
+              <autoCreateRowSorter value="false"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <vspacer id="92b77">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="4"/>
+            <preferred-size width="-1" height="6"/>
+            <maximum-size width="-1" height="11"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="c6abd">
+        <constraints>
+          <grid row="10" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="4"/>
+            <preferred-size width="-1" height="6"/>
+            <maximum-size width="-1" height="11"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <component id="cc28b" class="javax.swing.JLabel" binding="toDifineLabel">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="12"/>
+            <preferred-size width="-1" height="12"/>
+            <maximum-size width="-1" height="12"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Epreuve à definir:"/>
+        </properties>
+      </component>
+      <component id="7e217" class="javax.swing.JButton" binding="definirEpreuveButton">
+        <constraints>
+          <grid row="11" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Definir"/>
+        </properties>
+      </component>
+      <component id="9e5d6" class="javax.swing.JLabel" binding="errorArea">
+        <constraints>
+          <grid row="14" column="1" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-4247010"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="9567d" class="javax.swing.JButton" binding="supprimerLEpreuveButton" default-binding="true">
+        <constraints>
+          <grid row="12" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-4247010"/>
+          <enabled value="true"/>
+          <text value="Supprimer l'epreuve"/>
+        </properties>
+      </component>
+      <component id="b6fe" class="javax.swing.JButton" binding="supprimerLeMatchButton" default-binding="true">
+        <constraints>
+          <grid row="8" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-4247010"/>
+          <enabled value="true"/>
+          <text value="Supprimer le match"/>
+        </properties>
+      </component>
+      <vspacer id="4515e">
+        <constraints>
+          <grid row="9" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="4771b">
+        <constraints>
+          <grid row="13" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="buttonGroup1">
+      <member id="8231f"/>
+      <member id="66d95"/>
+    </group>
+  </buttonGroups>
+</form>
